@@ -8,10 +8,34 @@
     width: fit-content;
 }
 
+ input[type=text] {
+  border: none;
+  border-bottom: 2px solid black;
+  -webkit-text-fill-color: black;
+    text-align: center;
+     background-color: dimgray;
+     outline: none;
+}
 .commentBox p {
     margin: 5px 0;
     font-size: 16px;
     color: #333;
+}
+button {
+     border: none;
+  color: black;
+  padding: 7px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  transition-duration: 0.4s;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #1c1e1d; /* Green */
+  color: white;
 }
 
 .likes-reply {
@@ -47,6 +71,7 @@
     border-bottom: 2px solid #007bff;
     outline: none;
     transition: border-bottom 0.3s ease;
+    background-color:#f9f9f9 !important
 }
 
 .reply:focus {

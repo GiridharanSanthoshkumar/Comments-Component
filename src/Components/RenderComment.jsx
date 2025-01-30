@@ -66,7 +66,8 @@ setreplyButtonClicked(false)
              </div>
             {replyButtonClicked && (
                 <div style={{ paddingLeft: "20px",paddingTop: "20px" }}>
-                <input type="text" name="reply" className="reply" onChange={(e) => setreplyValue(e.target.value)} />
+                        <input type="text" name="reply" className="reply" onChange={(e) => setreplyValue(e.target.value)}
+                        />
                 <button onClick={() => submitReply(props.comment.id)}>Submit</button>
                 </div>
                 )}

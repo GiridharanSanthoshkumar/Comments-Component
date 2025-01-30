@@ -31,7 +31,9 @@ function CommentSection(props)
     backgroundColor: "dimgray",
     borderRadius: "10px"}}>
         <div style={inputtextstyle}>
-            <input type="text" name="inputcomment" placeholder="share your comment" onChange={(e)=>setComment(e.target.value)} value={Comment}></input>
+            <input type="text" name="inputcomment" placeholder="share your comment" onChange={(e) => setComment(e.target.value)} value={Comment} 
+                style={{    width: "40vw"}}
+            ></input>
             <button onClick={addComment}>submit</button>
         </div>
         <h3>comment:</h3>
